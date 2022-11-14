@@ -4,56 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>[Projectnaam] living styleguide</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>OBA living styleguide</title>
+    <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body>
+    <div class="sidebar-container">
     <header>
-      <h1>[Projectnaam] styleguide v0.1</h1>
+      <h1>OBA styleguide v0.1</h1>
     </header>
 
     <nav>
       <ul>
-        <li><a href="/" class="active">Globals</a></li>
-        <li><a href="/">...</a></li>
+        <li><a href="/" target="displayed-page">Typografie</a></li>
+        <li><a href="/" target="displayed-page">Kleur</a></li>
+        <li><a href="/" target="displayed-page">Icons & Buttons</a></li>
+        <li><a href="/" target="displayed-page">Layout & Imagery</a></li>
+        <li><a href="/" target="displayed-page">Navigation & Interaction</a></li>
       </ul>
     </nav>
+    </div>
 
     <main>
-      <h2>Globals</h2>
-
-      <section>
-        <h3>Header</h3>
-        <img src="screenshot_van_je_header.png" alt="screenshot van je header" />
-
-        <h4>Wel doen</h4>
-        <p>Vertel hoe dingen toegepast moeten worden.</p>
-
-        <h4>Niet doen</h4>
-        <p>Vertel hoe dingen vooral niet toegepast moeten worden.</p>
-
-        <!-- Om HTML in HTML te laten zien gebruik je &lt; voor de < en &gt; voor de > -->
-        <pre><code>&lt;header&gt;
-  &lt;h1&gt;Zo maak je een header&lt;/h1&gt;
-&lt;/header&gt;
-
-header {
-  background-color: white;
-  margin-bottom: 1rem;
-  color: silver;
-}
-
-header > h1 {
-  font-size: 1rem;
-  text-align: right;
-}
-  </code></pre>
-      </section>
-
-      <section>
-        <h3>Footer</h3>
-        ...
-      </section>
+      <iframe name="displayed-page" src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik"></iframe>
     </main>
   </body>
 </html>
