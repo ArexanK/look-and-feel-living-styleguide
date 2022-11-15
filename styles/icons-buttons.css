@@ -2,7 +2,7 @@
   --background-color: #F5F1ED;
   --text-color: #55505C;
   --content-background: #F5F3F5;
-    --content-text: #302B27;
+  --content-text: #302B27;
 
 }
 
@@ -19,3 +19,172 @@ body {
   background-color: var(--content-background);
   color: var(--content-text);
 }
+
+@font-face {
+  font-family: 'avenir_lt_std95_black';
+  src: url('../assets/fonts/avenir/avenirltstd-black-webfont.woff2') format('woff2'),
+    url('../assets/fonts/avenir/avenirltstd-black-webfont.woff') format('woff');
+  font-weight: heavy;
+  font-style: normal;
+}
+
+
+
+
+@font-face {
+  font-family: 'avenir_lt_std45_book';
+  src: url('../assets/fonts/avenir/avenirltstd-book-webfont.woff2') format('woff2'),
+    url('../assets/fonts/avenir/avenirltstd-book-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+@font-face {
+  font-family: 'avenir_lt_std55_roman';
+  src: url('../assets/fonts/avenir/avenirltstd-roman-webfont.woff2') format('woff2'),
+    url('../assets/fonts/avenir/avenirltstd-roman-webfont.woff') format('woff');
+  font-weight: light;
+  font-style: normal;
+}
+
+
+
+
+/* begin Buttons CSS*/
+
+
+/* buttons styles*/
+
+.btn-standaard {
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  padding: 1em 1em
+}
+
+
+.btn-link {
+  text-decoration: underline;
+
+}
+
+/*end button styles*/
+
+/* start dropdown button*/
+.dropdown {
+  display: inline-block;
+  position: relative;
+  background-color: white;
+  color: black;
+}
+
+.dd-button {
+  display: inline-block;
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 10px 30px 10px 20px;
+
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dd-button:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid black;
+  background-color: white;
+
+}
+
+
+
+
+.dd-input {
+  display: none;
+}
+
+.dd-menu {
+  position: absolute;
+  top: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0;
+  margin: 2px 0 0 0;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+  background-color: white;
+  list-style-type: none;
+}
+
+.dd-input+.dd-menu {
+  display: none;
+}
+
+.dd-input:checked+.dd-menu {
+  display: block;
+
+
+}
+
+.dd-menu li {
+  padding: 10px 20px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+
+.dd-menu li a {
+  display: block;
+  margin: -10px -20px;
+  padding: 10px 20px;
+}
+
+.dd-menu li.divider {
+  padding: 0;
+  border-bottom: 1px solid #cccccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* end buttons css/*
+
+
+
+
+
+
+
+
+
+
+
+/* begin Icons css/*
+
+
+
+
+
+
+
+
+
+
+/* END Icons CSS /*
