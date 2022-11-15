@@ -55,12 +55,51 @@ body {
 
 /* begin Buttons CSS*/
 
+.btn-standaard {
+  background-color: white;
 
 
+}
+
+.btn-primair {
+  background-color: #008CBA;
+
+  color: white;
+}
+
+.btn-gevaar {
+  background-color: #f44336;
+
+  color: white;
+}
+
+.btn-succes {
+  color: white;
+  background-color: #4CAF50;
+
+}
 
 
+.btn-info {
+  color: white;
+  background-color: purple;
 
+}
 
+.btn-waarschuwing {
+  color: white;
+  background-color: orange;
+
+}
+
+.btn-link {
+  text-decoration: underline;
+
+}
+
+img {
+  max-width: auto;
+}
 
 
 /* end buttons css/*
