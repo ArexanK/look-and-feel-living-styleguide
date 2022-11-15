@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,68 @@
   <link rel="stylesheet" href="../styles/kleur.css" />
   <title>Document</title>
 </head>
+
 <body>
   <h1>Kleur</h1>
+  <h2>Het kleurenschema van de OBA huisstijl bestaat uit de volgende kleuren:
+  </h2>
+    <ul class="colors" >
+      <li class="code" >rgb(255, 0, 0) <br> #ff0000 </li>
+      <li class="code" >rgb(0, 0, 0) <br> #000000 </li>
+      <li class="code" >rgb(34, 52, 52) <br> #223434 </li>
+      <li class="code" >rgb(51, 51, 51) <br> #333 </li>
+      <li class="code" >rgb(111, 111, 111) <br> #6f6f6f </li>
+      <li class="code" style="color: var(--black);">rgb(255, 255, 255) <br> #ffffff </li>
+    </ul>
+    <ul class="colors2-1" >
+      <li class="code" >rgb(255, 0, 0) <br> #ff0000 </li>
+      <li class="code" >rgb(0, 0, 0) <br> #000000 </li>
+      <li class="code" >rgb(34, 52, 52) <br> #223434 </li>
+    </ul>
+    <ul class="colors2-2" >
+      <li class="code" >rgb(51, 51, 51) <br> #333 </li>
+      <li class="code" >rgb(111, 111, 111) <br> #6f6f6f </li>
+      <li class="code" style="color: var(--black);">rgb(255, 255, 255) <br> #ffffff </li>
+    </ul>
+  <div id="colorWheel"><div id="colorWheelInside"></div></div>
+  <svg viewBox="0 0 100 100" width="310" height="310">
+    <defs>
+      <path id="circle"
+        d="
+          M 50, 50
+          m -37, 0
+          a 37,37 0 1,1 74,0
+          a 37,37 0 1,1 -74,0"/>
+    </defs>
+    <text font-size="5.5">
+      <textPath id="textPath1" xlink:href="#circle">
+        (255,000,000) (000,000,000) (034,052,052) (051,051,051) (111,111,111) (255,255,255)
+      </textPath>
+    </text>
+  </svg>
+  <ul class="listColors">
+    <li class="colorsDesc">Enkel voor het logo en de het thema 'Lid worden/zijn' wordt <span class="spanColor">rood</span> als constante kleur gebruikt. Verder kan deze worden toegepast tijdens het hoveren van de meeste elementen.</li>
+    <li class="colorsDesc"><span class="spanColorFirst">Zwart</span> is de primaire tekstkleur. Dit is ook de achtergrond kleur van buttons en de footer met <span class="spanColor">wit</span> als tekstkleur.</li>
+    <li class="colorsDesc"><span class="spanColorFirst">Blauwgrijs</span> wordt alleen toegepast binnen paginas van individuele artikelen. Deze wordt dan de primaire tekstkleur met <span class="spanColor">zwart</span> als secundaire.</li>
+    <li class="colorsDesc"><span class="spanColorFirst">Donkergrijs</span> is de secundaire tekstkleur. Deze kan worden gebruikt voor bijvoorbeeld auteursnamen, prijzen, datums enzovoort.</li>
+    <li class="colorsDesc">Slechts binnen de 'Mijn OBA' omgeving wordt <span class="spanColor">Lichtgrijs</span> gebruikt. Deze is dan de primaire tekstkleur, hier kan <span class="spanColor">zwart</span> worden gebruikt tijdens het hoveren. </li>
+    <li class="colorsDesc"><span class="spanColorFirst">Wit</span> is altijd de achtergrond voor de gehele pagina. Verder wordt deze standaard gebruikt bij <span class="spanColor">zwarte</span> achtergronden (bijvoorbeeld bij de footer).</li>
+  </ul>
+  <hr>
+  <ul class="example">
+    <li class="exmapleIndividual goodHeader">Do</li>
+    <li class="exmapleIndividual badHeader">Don't</li>
+    <li class="exmapleIndividual good1">Primaire tekst zwart<span id="spanGood1"> Secundaire tekst donkegrijs </span> <span class="do1"></span></li>
+    <li class="exmapleIndividual bad1">Primaire tekst is nooit donkergrijs<span id="spanBad1"> Lorem, ipsum. </span> <span class="dont1"></span></li>
+    <li class="exmapleIndividual good2">Zwarte achtergrond met witte tekst. <span class="do2"></span></li>
+    <li class="exmapleIndividual bad2">Geen rode tekst op een zwarte achtergrond, alleen bij hover. <span class="dont2"></span></li>
+    <li class="exmapleIndividual good3">Witte achtergrond <span class="do3"></span></li>
+    <li class="exmapleIndividual bad3">Achtergronden zijn enkel wit of zwart. <span class="dont3"></span></li>
+    <li class="exmapleIndividual good4">Zwarte tekst wordt rood bij hover <span class="do4"></span></li>
+    <li class="exmapleIndividual bad4">Blauwgrijze tekstkleur bij hover geeft niet genoeg contrast na zwart. <span class="dont4"></span></li>
+    <li class="exmapleIndividual good5">Wordt nu lid! <br> (Leden gerelateerde tekst mag rood zijn.)  <span class="do5" ></span></li>
+    <li class="exmapleIndividual bad5">Vestigingen <br> (Tekst wordt niet gebruikt in de juiste context) <span class="dont5"></span></li>
+  </ul>
 </body>
+
 </html>
