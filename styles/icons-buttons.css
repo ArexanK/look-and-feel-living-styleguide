@@ -55,57 +55,128 @@ body {
 
 /* begin Buttons CSS*/
 
+
+/* buttons styles*/
+
 .btn-standaard {
-  background-color: white;
-
-
-}
-
-.btn-primair {
-  background-color: #008CBA;
-
+  background-color: black;
   color: white;
+  font-size: 1rem;
+  padding: 1em 1em
 }
 
-.btn-gevaar {
-  background-color: #f44336;
-
-  color: white;
-}
-
-.btn-succes {
-  color: white;
-  background-color: #4CAF50;
-
-}
-
-
-.btn-info {
-  color: white;
-  background-color: purple;
-
-}
-
-.btn-waarschuwing {
-  color: white;
-  background-color: orange;
-
-}
 
 .btn-link {
   text-decoration: underline;
 
 }
 
-img {
-  max-width: auto;
+/*end button styles*/
+
+/* start dropdown button*/
+.dropdown {
+  display: inline-block;
+  position: relative;
+  background-color: white;
+  color: black;
 }
+
+.dd-button {
+  display: inline-block;
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 10px 30px 10px 20px;
+
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dd-button:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid black;
+  background-color: white;
+
+}
+
+
+
+
+.dd-input {
+  display: none;
+}
+
+.dd-menu {
+  position: absolute;
+  top: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0;
+  margin: 2px 0 0 0;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+  background-color: white;
+  list-style-type: none;
+}
+
+.dd-input+.dd-menu {
+  display: none;
+}
+
+.dd-input:checked+.dd-menu {
+  display: block;
+
+
+}
+
+.dd-menu li {
+  padding: 10px 20px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+
+.dd-menu li a {
+  display: block;
+  margin: -10px -20px;
+  padding: 10px 20px;
+}
+
+.dd-menu li.divider {
+  padding: 0;
+  border-bottom: 1px solid #cccccc;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* end buttons css/*
 
 
-/* Ibegin Icons css/*
+
+
+
+
+
+
+
+
+
+/* begin Icons css/*
 
 
 
