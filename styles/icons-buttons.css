@@ -2,7 +2,7 @@
   --background-color: #F5F1ED;
   --text-color: #55505C;
   --content-background: #F5F3F5;
-    --content-text: #302B27;
+  --content-text: #302B27;
 
 }
 
@@ -19,3 +19,62 @@ body {
   background-color: var(--content-background);
   color: var(--content-text);
 }
+
+@font-face {
+  font-family: 'avenir_lt_std95_black';
+  src: url('../assets/fonts/avenir/avenirltstd-black-webfont.woff2') format('woff2'),
+    url('../assets/fonts/avenir/avenirltstd-black-webfont.woff') format('woff');
+  font-weight: heavy;
+  font-style: normal;
+}
+
+
+
+
+@font-face {
+  font-family: 'avenir_lt_std45_book';
+  src: url('../assets/fonts/avenir/avenirltstd-book-webfont.woff2') format('woff2'),
+    url('../assets/fonts/avenir/avenirltstd-book-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+@font-face {
+  font-family: 'avenir_lt_std55_roman';
+  src: url('../assets/fonts/avenir/avenirltstd-roman-webfont.woff2') format('woff2'),
+    url('../assets/fonts/avenir/avenirltstd-roman-webfont.woff') format('woff');
+  font-weight: light;
+  font-style: normal;
+}
+
+
+
+
+/* begin Buttons CSS*/
+
+
+
+
+
+
+
+
+
+/* end buttons css/*
+
+
+/* Ibegin Icons css/*
+
+
+
+
+
+
+
+
+
+
+/* END Icons CSS /*
