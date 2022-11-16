@@ -69,3 +69,43 @@ color:red;
 .nav6{
     grid-area: nav6;
 }
+
+/* Footer */
+
+footer{
+    height: 500px;
+    background-color: #000000;
+    padding-bottom: 0px;
+}
+
+.Hfooter{
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: large;
+    padding-top: 10px;
+  
+
+   
+}
+
+.Hfooter p{
+   padding-left: 10%;
+   font-size: 30px;
+}
+@media (min-width: 570px){
+    .Hfooter{
+        display: flex;
+    }
+}
+@media (max-width: 570px){
+    footer{
+        height: 1400px;
+    }
+}
+
+.Hfooter a{
+    display: grid;
+    color: aqua;
+
+}
