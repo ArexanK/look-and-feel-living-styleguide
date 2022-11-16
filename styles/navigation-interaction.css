@@ -19,3 +19,162 @@ body {
   background-color: var(--content-background);
   color: var(--content-text);
 }
+
+/* navigatie */
+
+nav ul{
+  list-style-type: none;
+  display: block;
+  padding-bottom: 100px;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: lowercase;
+  text-decoration: none;
+}
+
+li{
+  display: inline;
+  padding: 30px;
+  
+
+}
+
+#dev a{
+  text-decoration: none;
+  color: #000000;
+  
+  
+}
+#dev a:hover{
+color:red;
+}
+
+@media (max-width: 1100px){
+  li{
+      padding: 10px;
+  }
+}
+@media (max-width: 1100px){
+  #dev ul{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas:
+        "nav1 nav2"
+        "nav3 nav4"
+        "nav5 nav6";
+      padding: 5px;
+      gap: 5px;
+  }
+}
+
+
+
+.nav1{
+  grid-area: nav1;
+}
+.nav2{
+  grid-area: nav2;
+}
+.nav3{
+  grid-area: nav3;
+}
+.nav4{
+  grid-area: nav4;
+}
+.nav5{
+  grid-area: nav5;
+}
+.nav6{
+  grid-area: nav6;
+}
+
+/* Accordions */
+.accordion {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 30px;
+  width: 60%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  border: 1px solid white;
+}
+
+.active, .accordion:hover {
+  background-color: darkred; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  width: 60%;
+  margin-bottom: 0px;
+}
+
+/* Footer */
+
+footer{
+  height: 500px;
+  background-color: #000000;
+  padding-bottom: 0px;
+}
+
+.Hfooter{
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-size: large;
+  padding-top: 10px;
+
+
+ 
+}
+
+.Hfooter p{
+ padding-left: 10%;
+ font-size: 30px;
+}
+@media (min-width: 570px){
+  .Hfooter{
+      display: flex;
+  }
+}
+@media (max-width: 570px){
+  footer{
+      height: 1400px;
+  }
+}
+
+.Hfooter a{
+  display: grid;
+  color: aqua;
+
+}
+
+/* tabs */
+
+.button1{
+  color: white;
+  background-color: red;
+  border-color: red;
+}
+
+.button2{
+  color: white;
+  background-color: red;
+  border-color: red;
+}
+
+.button3{
+  color: white;
+  background-color: red;
+  border-color: red;
+}
