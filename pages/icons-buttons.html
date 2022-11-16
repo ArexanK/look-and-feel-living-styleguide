@@ -21,12 +21,12 @@
       worden weergegeven.
     </p>
 
-    <nav>
+    <!--<nav>
       <ul>
         <li><a href="/" class="active">Globals</a></li>
         <li><a href="/">...</a></li>
       </ul>
-    </nav>
+    </nav>-->
 
     <main>
       <section>
@@ -129,10 +129,30 @@
 
       <section>
         <h3>icon buttons</h3>
+        <p>
+          Pictogramknoppen zijn knoppen met een pictogram erin. Een
+          pictogramknop kan of mogelijk geen tekst. Pictogramknoppen kunnen
+          helpen om ruimte te besparen of de kwaliteit te verbeteren
+          mogelijkheid om knoppen snel te scannen/vinden. Gebruik btn-icon-only
+          voor knoppen met alleen een icoon erin. Dit optimaliseert de
+          opvulling. Voor een icoon zonder een rand, gebruik een btn-hover.
+        </p>
         <img
           src="screenshot_van_je_header.png"
           alt="screenshot van je header"
         />
+        <button type="button" class="btn btn-icon-only btn-default">
+          <i class="fa-sharp fa-solid fa-wifi"></i>
+          <span class="sr-only">Wifi</span>
+        </button>
+        <button type="button" class="btn btn-icon-only btn-primary">
+          <i class="fa fa-inverse fa-floppy-o"></i>
+          <span class="sr-only">Save</span>
+        </button>
+        <button type="button" class="btn btn-icon-only btn-hover">
+          <i class="fa fa-calendar-o"></i>
+          <span class="sr-only">Calendar</span>
+        </button>
       </section>
 
       <section>
