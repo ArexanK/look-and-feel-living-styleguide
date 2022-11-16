@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <script src="scripts/script.js"></script>
     <!-- CSS -->
     <link href="style/navint.css" rel="stylesheet">
     
@@ -61,6 +61,31 @@
     }
     </script>
     <!-- Accordions end -->
+
+<!-- tabs -->
+<h1>Tabs</h1>
+    <div class="wat">
+        <button class="button1" onclick="openCity('London')">London</button>
+        <button class="button2" onclick="openCity('Paris')">Paris</button>
+        <button class="button3" onclick="openCity('Tokyo')">Tokyo</button>
+      </div>
+      
+      <div id="London" class="w3-container city">
+        <h2>London</h2>
+        <p>London is the capital city of England.</p>
+      </div>
+      
+      <div id="Paris" class="w3-container city" style="display:none">
+        <h2>Paris</h2>
+        <p>Paris is the capital of France.</p> 
+      </div>
+      
+      <div id="Tokyo" class="w3-container city" style="display:none">
+        <h2>Tokyo</h2>
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+
+      <!-- tabs end -->
 </body>
 
 <h1>Footer</h1>
