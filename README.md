@@ -21,6 +21,8 @@ Tools: Figma, Visual Studio code, Miro
 
 <h2> 🖇Installatie & gebruik </h2>
 
+N.V.T
+
 
 ## 🔎Licentie
 
