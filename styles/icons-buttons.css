@@ -18,7 +18,16 @@
 body {
   background-color: var(--content-background);
   color: var(--content-text);
+
+  font-family: avenir, Arial, Helvetica, sans-serif;
+  margin: 1rem;
 }
+
+h2 {
+  margin-top: 3rem;
+}
+
+
 
 @font-face {
   font-family: 'avenir_lt_std95_black';
@@ -230,10 +239,6 @@ ion-icon {
   cursor: pointer;
 
 }
-
-
-
-
 
 
 /* end buttons css/*
