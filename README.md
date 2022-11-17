@@ -11,7 +11,7 @@ http://oba-styleguide.student.fdnd.nl/
 
 <h2> 📝Beschrijving</h2>
 
-De Living Style guide van OBA is een referentie voor een team van ontwerpers en ontwikkelaars om te begrijpen hoe een applicatie eruit zal zien en aanvoelt. Dit is gemaakt om de ontwerptaal over te brengen, ontwerpredenen te definiëren en uit te leggen hoe de markup van OBA wordt gebruikt. 
+De Living Style guide van OBA is een referentie voor een team van ontwerpers en ontwikkelaars om te begrijpen hoe een website eruit zal zien en aanvoelt. Dit is gemaakt om de ontwerptaal over te brengen, ontwerpredenen te definiëren en uit te leggen hoe de markup van OBA wordt gebruikt. 
 
 <h2> 📌Kenmerken </h2>
 
