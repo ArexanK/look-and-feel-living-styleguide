@@ -224,29 +224,15 @@ nav>ul>li>a:hover {
 
 
 /* icon buttons*/
-.wifi-button {
-  width: 100px;
-  height: 100px;
+ion-icon {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
 
 }
 
 
-.print-button {
-  width: 100px;
-  height: 100px;
-}
 
-
-.book-button {
-
-  width: 100px;
-  height: 100px;
-}
-
-.info-button {
-  width: 100px;
-  height: 100px;
-}
 
 
 
