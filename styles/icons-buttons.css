@@ -73,12 +73,42 @@ body {
 
 /*end button styles*/
 
+/* start button sizes*/
+
+.btn1 {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.btn2 {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn3 {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.btn4 {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+
+
+/* end button sizes*/
+
+
+
 /* start dropdown button*/
 .dropdown {
   display: inline-block;
   position: relative;
   background-color: white;
   color: black;
+  cursor: pointer;
 }
 
 .dd-button {
@@ -153,20 +183,57 @@ body {
   border-bottom: 1px solid #cccccc;
 }
 
+/* end dropdown button*/
+
+/*Link Buttons*/
+
+nav>ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+}
+
+
+nav>ul>li>a {
+  color: black;
+  text-decoration: none;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+
+}
+
+nav>ul>li>a:hover {
+  color: #F44336;
+}
 
 
 
+
+
+
+
+
+
+
+/* icon buttons*/
 .wifi-button {
   width: 100px;
   height: 100px;
+
 }
 
 
 .print-button {
   width: 100px;
   height: 100px;
-
-
 }
 
 
