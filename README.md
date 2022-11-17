@@ -15,6 +15,9 @@ De Living Style guide van OBA is een referentie voor een team van ontwerpers en 
 
 <h2> 📌Kenmerken </h2>
 
+code: HTML, CSS 
+
+Tools: Figma, Visual Studio code, Miro
 
 <h2> 🖇Installatie & gebruik </h2>
 
