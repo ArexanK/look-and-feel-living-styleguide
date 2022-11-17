@@ -12,7 +12,9 @@ De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 <h2> 📝Beschrijving</h2>
 
 
+<h2> 📌Kenmerken </h2>
 
+<h2> 🖇Installatie & gebruik </h2>
 
 
 ## 🔎Licentie
