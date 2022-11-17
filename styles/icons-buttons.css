@@ -87,21 +87,29 @@ h2 {
 .btn1 {
   font-size: 12px;
   cursor: pointer;
+  background-color: black;
+  color: white;
 }
 
 .btn2 {
   font-size: 16px;
   cursor: pointer;
+  background-color: black;
+  color: white;
 }
 
 .btn3 {
   font-size: 20px;
   cursor: pointer;
+  background-color: black;
+  color: white;
 }
 
 .btn4 {
   font-size: 24px;
   cursor: pointer;
+  background-color: black;
+  color: white;
 }
 
 
