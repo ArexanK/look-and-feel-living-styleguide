@@ -18,7 +18,16 @@
 body {
   background-color: var(--content-background);
   color: var(--content-text);
+
+  font-family: avenir, Arial, Helvetica, sans-serif;
+  margin: 1rem;
 }
+
+h2 {
+  margin-top: 3rem;
+}
+
+
 
 @font-face {
   font-family: 'avenir_lt_std95_black';
@@ -78,21 +87,29 @@ body {
 .btn1 {
   font-size: 12px;
   cursor: pointer;
+  background-color: black;
+  color: white;
 }
 
 .btn2 {
   font-size: 16px;
   cursor: pointer;
+  background-color: black;
+  color: white;
 }
 
 .btn3 {
   font-size: 20px;
   cursor: pointer;
+  background-color: black;
+  color: white;
 }
 
 .btn4 {
   font-size: 24px;
   cursor: pointer;
+  background-color: black;
+  color: white;
 }
 
 
@@ -230,10 +247,6 @@ ion-icon {
   cursor: pointer;
 
 }
-
-
-
-
 
 
 /* end buttons css/*
