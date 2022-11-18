@@ -2,7 +2,7 @@
   --background-color: #F5F1ED;
   --text-color: #55505C;
   --content-background: #F5F3F5;
-    --content-text: #302B27;
+  --content-text: #302B27;
 
 }
 
@@ -18,4 +18,9 @@
 body {
   background-color: var(--content-background);
   color: var(--content-text);
+  font-family: avenir, Arial, Helvetica, sans-serif;
+  margin: 1rem;
+
+
+
 }
