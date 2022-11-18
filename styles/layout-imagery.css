@@ -18,6 +18,9 @@
 body {
   background-color: var(--content-background);
   color: var(--content-text);
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 2em;
+
 }
 
 div{
@@ -26,4 +29,9 @@ div{
 
 bold{
   color: red;
+}
+
+img{
+  height: 15em;
+  width: 10em;
 }
