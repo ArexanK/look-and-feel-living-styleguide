@@ -8,6 +8,7 @@
 body {
   background-color: var(--content-background);
   color: var(--content-text);
+  font-family: avenir, Arial, Helvetica, sans-serif;
 }
 
 .uitleg{
