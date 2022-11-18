@@ -1,7 +1,8 @@
 :root {
   --background-color: #F5F1ED;
-  --text-color: #55505C;
+  --text-color: #fff;
   --content-background: #F5F3F5;
+<<<<<<< HEAD
   --content-text: #302B27;
 
 }
@@ -13,6 +14,9 @@
     --content-background: #302B27;
     --content-text: #F5F3F5;
   }
+=======
+    --content-text: #fff;
+>>>>>>> 0e9d23d31ac8442f7ca2c4c9c62e350aa5db9864
 }
 
 body {
@@ -27,6 +31,7 @@ body {
   padding-left: 2em;
 
 }
+<<<<<<< HEAD
 
 div{
   max-width: 45em;
@@ -42,3 +47,5 @@ img{
   padding-left: 2em;
 >>>>>>> ee57a6e6c04655be545fea390c7b93b5dfad8518
 }
+=======
+>>>>>>> 0e9d23d31ac8442f7ca2c4c9c62e350aa5db9864
