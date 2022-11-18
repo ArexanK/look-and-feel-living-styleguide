@@ -1,18 +1,8 @@
 :root {
   --background-color: #F5F1ED;
-  --text-color: #55505C;
+  --text-color: #ff0000;
   --content-background: #F5F3F5;
   --content-text: #302B27;
-
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-color: #16213E;
-    --text-color: #F5F1ED;
-    --content-background: #0F3460;
-    --content-text: #F5F3F5;
-  }
 }
 
 body {

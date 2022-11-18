@@ -3,16 +3,6 @@
   --text-color: #55505C;
   --content-background: #F5F3F5;
     --content-text: #302B27;
-
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-color: #16213E;
-    --text-color: #F5F1ED;
-    --content-background: #0F3460;
-    --content-text: #F5F3F5;
-  }
 }
 
 body {
