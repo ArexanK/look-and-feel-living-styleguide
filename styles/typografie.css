@@ -18,4 +18,139 @@
 body {
   background-color: var(--content-background);
   color: var(--content-text);
+  font-family: 'Avenir', Arial, Helvetica, sans-serif;
+  margin: 5em;
+  max-width: 60em;
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+
+p{
+  font-size: 1 rem;
+}
+
+.basislettertype{
+  font-size: 1,0769rem;
+}
+
+.heading2{
+  font-size: 2rem;
+}
+
+.heading3{
+ font-size: 26px; 
+}
+
+.heading4{
+  font-size: 17,5px; 
+ }
+
+ /* Typografie tekst */
+ @font-face {
+  font-family: AvenirRoman;
+  src: url(../font/Avenir-roman.ttf);
+}
+
+@font-face {
+  font-family: AvenirMedium;
+  src: url(../font/Avenir-medium.ttf);
+}
+
+@font-face {
+  font-family: AvenirBlack;
+  src: url(../font/Avenir\ -black.ttf);
+}
+
+.titles {
+  font-family: AvenirBlack;
+  margin-bottom: -15px;
+  line-height: 1;
+}
+
+.titles-web {
+  font-family: AvenirBlack;
+  margin-bottom: -15px;
+  line-height: 1;
+}
+
+.container {
+  display: flex;
+}
+
+.container div{
+  font-family: AvenirMedium;
+  font-size: 13px;
+  align-items: center;
+  width: 10%;
+  line-height: 0.8;
+}
+
+.sub-title {
+  font-family: AvenirMedium;
+  color: rgb(144, 144, 144);
+}
+
+.medium-example-1 {
+  font-family: AvenirRoman;
+  font-size: 17px;
+  line-height: 1;
+  min-width: 250px;
+  margin-left: 100px;
+}
+
+.medium-example-2 {
+  font-family: AvenirMedium;
+  font-size: 16px;
+  line-height: 1;
+  min-width: 250px;
+  margin-left: 100px;
+}
+
+.roman-example-5 {
+  font-family: AvenirRoman;
+  font-size: 14px;
+  line-height: 1;
+  min-width: 250px;
+  margin-left: 100px;
+}
+
+.roman-example-2 {
+  font-family: AvenirRoman;
+  font-size: 19px;
+  line-height: 1;
+  min-width: 250px;
+  margin-left: 100px;
+}
+
+.roman-example-1 {
+  font-family: AvenirMedium;
+  font-size: 27px;
+  line-height: 1;
+  min-width: 250px;
+  margin-left: 100px;
+}
+
+.black-example-1 {
+  font-family: AvenirBlack;
+  font-size: 19px;
+  line-height: 1;
+  min-width: 250px;
+  margin-left: 100px;
+}
+
+.black-example-2 {
+  font-family: AvenirBlack;
+  font-size: 16px;
+  line-height: 1;
+  min-width: 250px;
+  margin-left: 100px;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  margin: 20px;
+  margin-inline-end: 20px;
+  background-color: white;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }

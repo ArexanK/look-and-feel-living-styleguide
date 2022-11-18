@@ -18,7 +18,27 @@
 body {
   background-color: var(--content-background);
   color: var(--content-text);
+<<<<<<< HEAD
 
 
 
+=======
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 2em;
+
+}
+
+div{
+  max-width: 45em;
+}
+
+bold{
+  color: red;
+}
+
+img{
+  height: 20em;
+  width: 22em;
+  padding-left: 2em;
+>>>>>>> ee57a6e6c04655be545fea390c7b93b5dfad8518
 }
