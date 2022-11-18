@@ -22,3 +22,17 @@ body {
   padding-left: 2em;
 
 }
+
+ul{
+  list-style-type: none;
+  margin:0
+}
+
+li a{
+  float: left;
+  margin-left: 1em;
+  text-decoration: none;
+  color: white;
+  
+  
+}
