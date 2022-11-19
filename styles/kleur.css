@@ -24,11 +24,17 @@
 
 body {
   font-family: avenirmedium, Arial, Helvetica, sans-serif;
-  margin: 1rem;
+  margin: 4rem 4rem 4rem 6rem;
+  margin: 2rem;
+}
+
+h1
+{
+  font-size: 2rem;
 }
 
 h2 {
-  margin-top: 3rem;
+  font-size: 1.625rem;
 }
 
 .colors {
@@ -68,7 +74,7 @@ h2 {
 .spanColor {
   font-weight: bold;
   font-size: 1.3rem;
-  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+  padding: 0.2rem 0.3rem 0.2rem 0.3rem;
 }
 
 .spanColor2{
@@ -238,8 +244,7 @@ svg {
   }
 }
 
-
-@media (max-width:1150px) {
+@media (max-width: 1450px) {
   .listColors {
     list-style: none;
     padding-inline-start: 0rem;
@@ -258,7 +263,7 @@ svg {
   }
 }
 
-@media (max-width:780px) {
+@media (max-width: 900px) {
   .listColors {
     flex-direction: column;
     align-items: center;
@@ -339,6 +344,7 @@ svg {
     display: block;
     position: absolute;
     left: 0;
+    right: -2rem;
     right: 0;
     margin: auto;
     margin-top: -19.2rem;
