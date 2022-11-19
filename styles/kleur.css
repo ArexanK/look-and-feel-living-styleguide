@@ -7,8 +7,23 @@
   --white: rgb(255, 255, 255);
 }
 
+@font-face {
+  font-family: AvenirRoman;
+  src: url(../font/Avenir-roman.ttf);
+}
+
+@font-face {
+  font-family: AvenirMedium;
+  src: url(../font/Avenir-medium.ttf);
+}
+
+@font-face {
+  font-family: AvenirBlack;
+  src: url(../font/Avenir\ -black.ttf);
+}
+
 body {
-  font-family: avenir, Arial, Helvetica, sans-serif;
+  font-family: avenirmedium, Arial, Helvetica, sans-serif;
   margin: 1rem;
 }
 
