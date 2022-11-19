@@ -23,6 +23,16 @@ p{
   font-size: 1,0769rem;
 }
 
+h1{
+  font-family: AvenirBlack;
+  font-size: 2.5rem;
+}
+
+h2{
+  font-family: AvenirBlack;
+  font-size: 2rem;
+}
+
 .heading2{
   font-family: AvenirBlack;
   font-size: 2rem;
