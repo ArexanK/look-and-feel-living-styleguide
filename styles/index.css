@@ -14,7 +14,7 @@
 body {
   min-height: 100vh;
 
-  font-family: sans-serif;
+  font-family: 'Avenir', sans-serif;
   text-rendering: optimizeLegibility;
   font-feature-settings: 'kern' 1, 'liga' on, 'dlig' on;
   line-height: 1.5;
