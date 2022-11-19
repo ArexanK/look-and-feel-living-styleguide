@@ -5,11 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>[Projectnaam] living styleguide</title>
-    <link rel="stylesheet" href="/styles/icons-buttons.css" />
+    <link rel="stylesheet" href="../styles/buttons.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </head>
   <body>
     <header>
-      <h1>Icons & Buttons</h1>
+      <h1>Buttons</h1>
     </header>
 
     <!--start BUTONS page-->
@@ -18,7 +26,8 @@
     <p>
       Een knop is een klikbaar element dat wordt gebruikt om een ​​actie uit te
       voeren. Het bevat een tekstlabel en er kan een ondersteunend pictogram
-      worden weergegeven.
+      worden weergegeven. Oba gebruikt verschillende soorten buttons op de
+      website maar voornamelijk hyperlink buttons.
     </p>
 
     <!--<nav>
@@ -58,41 +67,40 @@
 
         <a href="/" class="btn btn-link">text hier</a>
 
+        <a class="caret-button">
+          <ion-icon name="caret-forward"></ion-icon>
+        </a>
+
         <br />
         <br />
       </section>
 
       <section>
-        <h3>Button size</h3>
-
+        <h2>Button size</h2>
+        <p>
+          Verschillende button sizes worden gebruikt op de website van OBA
+          wanner de layout zich aanpast aan de resolutie van het beeldscherm (
+          desktop, ipad, mobile).
+        </p>
         <ul>
-          <li>Groot - gebruik de btn-lg-klasse</li>
-          <li>Klein - gebruik de btn-sm-klasse</li>
-          <li>Extra klein - gebruik de klasse btn-xs</li>
+          <li>Groot - btn-lg-klasse</li>
+          <li>Klein - btn-sm-klasse</li>
+          <li>Extra klein - klasse btn-xs</li>
 
-          <button type="button" class="btn btn-lg btn-default">Button</button>
-          <button type="button" class="btn btn-default">Button</button>
-          <button type="button" class="btn btn-sm btn-default">Button</button>
-          <button type="button" class="btn btn-xs btn-default">Button</button>
+          <button type="button" class="btn1 btn-lg btn-default">Button</button>
+          <button type="button" class="btn2 btn-default">Button</button>
+          <button type="button" class="btn3 btn-sm btn-default">Button</button>
+          <button type="button" class="btn4 btn-xs btn-default">Button</button>
         </ul>
 
-        <img
+        <!--<img
           src="screenshot_van_je_header.png"
           alt="screenshot van je header"
-        />
+        />-->
       </section>
 
       <section>
-        <h3>Toggle Button</h3>
-
-        <img
-          src="screenshot_van_je_header.png"
-          alt="screenshot van je header"
-        />
-      </section>
-
-      <section>
-        <h3>Dropdown Button</h3>
+        <h2>Dropdown Button</h2>
         <p>
           Met de vervolgkeuzelijst kan de gebruiker slechts één optie selecteren
           uit een lijst van minimaal 3 voorstellen (hieronder kunt u
@@ -120,49 +128,57 @@
       </section>
 
       <section>
-        <h3>Split Button</h3>
-        <img
-          src="screenshot_van_je_header.png"
-          alt="screenshot van je header"
-        />
+        <h2>Hyperlinks Buttons</h2>
+        <p>
+          Een Hyperlink is een koppeling die verwijst naar een ander document.
+          Dit is voornamelijk van toepassing op internetpagina's, waar gebruik
+          wordt gemaakt van Hyperlinks om te navigeren tussen afzonderlijke
+          pagina's.
+        </p>
+        <nav>
+          <ul>
+            <li><a href="#">agenda</a></li>
+            <li><a href="#">collectie</a></li>
+            <li><a href="#">leren</a></li>
+            <li><a href="#">jeugd</a></li>
+            <li><a href="#">service</a></li>
+            <li><a href="#">vestigingen</a></li>
+          </ul>
+        </nav>
       </section>
 
       <section>
-        <h3>icon buttons</h3>
+        <h2>Icon Buttons</h2>
         <p>
           Pictogramknoppen zijn knoppen met een pictogram erin. Een
           pictogramknop kan of mogelijk geen tekst. Pictogramknoppen kunnen
           helpen om ruimte te besparen of de kwaliteit te verbeteren
-          mogelijkheid om knoppen snel te scannen/vinden. Gebruik btn-icon-only
-          voor knoppen met alleen een icoon erin. Dit optimaliseert de
-          opvulling. Voor een icoon zonder een rand, gebruik een btn-hover.
+          mogelijkheid om knoppen snel te scannen/vinden. Oba gebruikt 4 button
+          icons op hun webiste.
         </p>
-        <img
+        <!--<img
           src="screenshot_van_je_header.png"
           alt="screenshot van je header"
-        />
-        <button type="button" class="btn btn-icon-only btn-default">
-          <i class="fa-sharp fa-solid fa-wifi"></i>
-          <span class="sr-only">Wifi</span>
-        </button>
-        <button type="button" class="btn btn-icon-only btn-primary">
-          <i class="fa fa-inverse fa-floppy-o"></i>
-          <span class="sr-only">Save</span>
-        </button>
-        <button type="button" class="btn btn-icon-only btn-hover">
-          <i class="fa fa-calendar-o"></i>
-          <span class="sr-only">Calendar</span>
-        </button>
+        />-->
+
+        <a class="wifi-button">
+          <ion-icon name="wifi-outline"></ion-icon>
+        </a>
+
+        <a class="print-button">
+          <ion-icon name="print-outline"></ion-icon>
+        </a>
+
+        <a class="book-button">
+          <ion-icon name="book-sharp"></ion-icon>
+        </a>
+
+        <a class="info-button">
+          <ion-icon name="information-circle-outline"></ion-icon>
+        </a>
       </section>
 
-      <section>
-        <!--End Buttons page-->
-
-        <!---Start ICONS page-->
-
-        <h3>Footer</h3>
-        ...
-      </section>
+      <section></section>
     </main>
   </body>
 </html>

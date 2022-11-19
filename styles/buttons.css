@@ -1,24 +1,23 @@
 :root {
-  --background-color: #F5F1ED;
-  --text-color: #55505C;
-  --content-background: #F5F3F5;
+  --background-color: #fff;
+  --text-color: #ff0000;
+  --content-background: #fff;
   --content-text: #302B27;
-
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-color: #55505C;
-    --text-color: #F5F1ED;
-    --content-background: #302B27;
-    --content-text: #F5F3F5;
-  }
 }
 
 body {
   background-color: var(--content-background);
   color: var(--content-text);
+
+  font-family: avenir, Arial, Helvetica, sans-serif;
+  margin: 1rem;
 }
+
+h2 {
+  margin-top: 3rem;
+}
+
+
 
 @font-face {
   font-family: 'avenir_lt_std95_black';
@@ -73,12 +72,50 @@ body {
 
 /*end button styles*/
 
+/* start button sizes*/
+
+.btn1 {
+  font-size: 12px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+.btn2 {
+  font-size: 16px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+.btn3 {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+.btn4 {
+  font-size: 24px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+
+
+
+/* end button sizes*/
+
+
+
 /* start dropdown button*/
 .dropdown {
   display: inline-block;
   position: relative;
   background-color: white;
   color: black;
+  cursor: pointer;
 }
 
 .dd-button {
@@ -153,6 +190,36 @@ body {
   border-bottom: 1px solid #cccccc;
 }
 
+/* end dropdown button*/
+
+/*Link Buttons*/
+
+nav>ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+}
+
+
+nav>ul>li>a {
+  color: black;
+  text-decoration: none;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+
+}
+
+nav>ul>li>a:hover {
+  color: #F44336;
+}
 
 
 
@@ -162,6 +229,14 @@ body {
 
 
 
+
+/* icon buttons*/
+ion-icon {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+
+}
 
 
 /* end buttons css/*

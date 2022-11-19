@@ -1,13 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- CSS -->
   <link rel="stylesheet" href="../styles/navigation-interaction.css" />
-  <title>Document</title>
+
+  <title>Navigation & interaction</title>
 </head>
+<header>
+  <H1>Header voorbeeld 1</H1>
+  <p class="uitleg">Een navigatiebalk is een link naar de juiste secties/pagina's op een website die lezers helpt bij
+    het doorlopen van het online document. Beschouwd als een traditionele navigatiemethode, kan een navigatiebalk op een
+    aantal manieren worden geïmplementeerd, namelijk horizontaal of verticaal, of vast of dynamisch.</p>
+  <nav id="dev">
+
+    <ul>
+      <li><a class="nav1" href="https://www.oba.nl/activiteiten.html">agenda</a></li>
+      <li><a class="nav2" href="https://www.oba.nl/collectie.html">collectie</a></li>
+      <li><a class="nav3" href="https://www.oba.nl/leren.html">leren</a></li>
+      <li><a class="nav4" href="https://www.oba.nl/jeugd.html">jeugd</a></li>
+      <li><a class="nav5" href="https://www.oba.nl/service.html">service</a></li>
+      <li><a class="nav6" href="https://www.oba.nl/over-ons.html">over ons</a></li>
+    </ul>
+  </nav>
+
+</header>
+
 <body>
-  <h1>Navigation & Interaction</h1>
+  <!-- Acoortdions -->
+  <h1>Accordion voorbeeld 1</h1>
+  <p class="uitleg">In webdesign is een accordeon een type menu dat een lijst met op elkaar gestapelde koppen weergeeft.
+    Wanneer erop wordt geklikt (of geactiveerd door een toetsenbordinteractie of schermlezer), zullen deze koppen de
+    bijbehorende inhoud onthullen of verbergen.</p>
+
+  <button class="accordion">Section 1</button>
+  <div class="panel">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat.</p>
+  </div>
+
+  <button class="accordion">Section 2</button>
+  <div class="panel">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat.</p>
+  </div>
+
+  <button class="accordion">Section 3</button>
+  <div class="panel">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat.</p>
+  </div>
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
+  <!-- Accordions end -->
+
+  <!-- tabs -->
+  <h1>Tabs</h1>
+    <div class="wat">
+        <button class="button1" onclick="openCity('London')">London</button>
+        <button class="button2" onclick="openCity('Paris')">Paris</button>
+        <button class="button3" onclick="openCity('Tokyo')">Tokyo</button>
+      </div>
+      
+      <div id="London" class="w3-container city">
+        <h2>London</h2>
+        <p>London is the capital city of England.</p>
+      </div>
+      
+      <div id="Paris" class="w3-container city" style="display:none">
+        <h2>Paris</h2>
+        <p>Paris is the capital of France.</p> 
+      </div>
+      
+      <div id="Tokyo" class="w3-container city" style="display:none">
+        <h2>Tokyo</h2>
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+<script>
+function openCity(cityName) {
+    var i;
+    var x = document.getElementsByClassName("city");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    document.getElementById(cityName).style.display = "block";  
+  }
+  </script>
+
+  <!-- tabs end -->
 </body>
+
+<h1>Footer</h1>
+<p class="uitleg">
+  Het footer HTML-element vertegenwoordigt een voettekst voor de sectie-inhoud of het root-element van
+  de dichtstbijzijnde voorouder. Een footer bevat doorgaans informatie over de auteur van de sectie,
+  copyrightgegevens of links naar gerelateerde documenten.
+</p>
+<footer>
+  <div class="Hfooter">
+    <div>
+      <p>Service</p>
+      <ul>
+        <li><a href="https://www.oba.nl/service.html">Veelgestelde vragen</a></li>
+        <li><a href="">vestigingen</a></li>
+        <li><a href="">abonnementen</a></li>
+        <li><a href="">contacten</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <p>Inspiratie</p>
+      <ul>
+        <li><a href="">nieuws</a></li>
+        <li><a href="">nieuwsbrief</a></li>
+        <li><a href="">leestips en blogs</a></li>
+        <li><a href="">instagram</a></li>
+        <li><a href="">twitter</a></li>
+        <li><a href="">facebook</a></li>
+        <li><a href="">linkedin</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <p>Over ons</p>
+      <ul>
+        <li><a href="">vacatures</a></li>
+        <li><a href="">voor de pers</a></li>
+        <li><a href="">partners</a></li>
+        <li><a href="">fondsenwerving</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <p>Zakelijk</p>
+      <ul>
+        <li><a href="">Oba school</a></li>
+        <li><a href="">Oba congres</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
 </html>

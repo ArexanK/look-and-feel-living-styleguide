@@ -5,11 +5,18 @@
   --darkgrey: #333;
   --lightgray: #6f6f6f;
   --white: rgb(255, 255, 255);
+
+  --background-color: #fff;
+  --text-color: #ff0000;
+  --content-background: #fff;
+  --content-text: #302B27;
 }
 
 body {
   font-family: avenir, Arial, Helvetica, sans-serif;
   margin: 1rem;
+  background-color: var(--content-background);
+  color: var(--content-text);
 }
 
 h2 {
