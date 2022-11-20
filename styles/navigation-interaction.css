@@ -151,8 +151,12 @@ footer{
 
 .Hfooter a{
   display: grid;
-  color: aqua;
+  color: white;
 
+}
+
+.Hfooter a:hover{
+  color: red;
 }
 
 /* tabs */
