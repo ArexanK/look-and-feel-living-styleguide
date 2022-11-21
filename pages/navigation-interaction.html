@@ -32,31 +32,38 @@
 
 <body>
   <!-- Acoortdions -->
-  <h1>Accordion voorbeeld 1</h1>
-  <p class="uitleg">In webdesign is een accordeon een type menu dat een lijst met op elkaar gestapelde koppen weergeeft.
-    Wanneer erop wordt geklikt (of geactiveerd door een toetsenbordinteractie of schermlezer), zullen deze koppen de
-    bijbehorende inhoud onthullen of verbergen.</p>
+  <section>
+    <h1>Accordion voorbeeld 1</h1>
+    <p class="uitleg">In webdesign is een accordeon een type menu dat een lijst met op elkaar gestapelde koppen
+      weergeeft.
+      Wanneer erop wordt geklikt (of geactiveerd door een toetsenbordinteractie of schermlezer), zullen deze koppen de
+      bijbehorende inhoud onthullen of verbergen.</p>
+    <div class="accordion-section">
+      <button class="accordion">Section 1</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+      </div>
 
-  <button class="accordion">Section 1</button>
-  <div class="panel">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat.</p>
-  </div>
+      <button class="accordion">Section 2</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+      </div>
 
-  <button class="accordion">Section 2</button>
-  <div class="panel">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat.</p>
-  </div>
-
-  <button class="accordion">Section 3</button>
-  <div class="panel">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat.</p>
-  </div>
+      <button class="accordion">Section 3</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+      </div>
+    </div>
+  </section>
 
   <script>
     var acc = document.getElementsByClassName("accordion");
@@ -78,35 +85,35 @@
 
   <!-- tabs -->
   <h1>Tabs</h1>
-    <div class="wat">
-        <button class="button1" onclick="openCity('London')">London</button>
-        <button class="button2" onclick="openCity('Paris')">Paris</button>
-        <button class="button3" onclick="openCity('Tokyo')">Tokyo</button>
-      </div>
-      
-      <div id="London" class="w3-container city">
-        <h2>London</h2>
-        <p>London is the capital city of England.</p>
-      </div>
-      
-      <div id="Paris" class="w3-container city" style="display:none">
-        <h2>Paris</h2>
-        <p>Paris is the capital of France.</p> 
-      </div>
-      
-      <div id="Tokyo" class="w3-container city" style="display:none">
-        <h2>Tokyo</h2>
-        <p>Tokyo is the capital of Japan.</p>
-      </div>
-<script>
-function openCity(cityName) {
-    var i;
-    var x = document.getElementsByClassName("city");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";  
+  <div class="wat">
+    <button class="button1" onclick="openCity('London')">London</button>
+    <button class="button2" onclick="openCity('Paris')">Paris</button>
+    <button class="button3" onclick="openCity('Tokyo')">Tokyo</button>
+  </div>
+
+  <div id="London" class="w3-container city">
+    <h2>London</h2>
+    <p>London is the capital city of England.</p>
+  </div>
+
+  <div id="Paris" class="w3-container city" style="display:none">
+    <h2>Paris</h2>
+    <p>Paris is the capital of France.</p>
+  </div>
+
+  <div id="Tokyo" class="w3-container city" style="display:none">
+    <h2>Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+  <script>
+    function openCity(cityName) {
+      var i;
+      var x = document.getElementsByClassName("city");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      document.getElementById(cityName).style.display = "block";
     }
-    document.getElementById(cityName).style.display = "block";  
-  }
   </script>
 
   <!-- tabs end -->
