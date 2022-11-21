@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>[Projectnaam] living styleguide</title>
     <link rel="stylesheet" href="../styles/buttons.css" />
+    <link href="themes/prism.css" rel="stylesheet" />
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -14,6 +16,10 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+
+    <script src="prism.js"></script>
+
+
   </head>
   <body>
     <header>
@@ -54,7 +60,6 @@
           <div class="dd-button">dropdown</div>
 
           <input type="checkbox" class="dd-input" id="test" />
-
           <ul class="dd-menu">
             <li>OBA</li>
             <li>e-books & luisterboeken</li>
@@ -70,6 +75,47 @@
         <a class="caret-button">
           <ion-icon name="caret-forward"></ion-icon>
         </a>
+        <br>
+
+        <!--Code samples-->
+
+
+
+             
+<pre><code>
+  <p>Code sample</p>
+
+&lt;button type="button" class="btn btn-standaard">Standaard&lt;/button>
+        
+&lt;label class="dropdown">
+
+
+&lt;div class="dd-button">dropdown</div>
+
+&lt;input type="checkbox" class="dd-input" id="test" />
+
+&lt;ul class="dd-menu">
+
+  &lt;li>OBA</li>
+  &lt;li>e-books & luisterboeken</li>
+  &lt;li>Muziekweb</li>
+  &lt;li class="divider"></li>
+  
+
+  &lt;li>Landelijk</li>
+&lt;/ul>
+&lt;/label>
+
+
+&lt; a href="/" class="btn btn-link">text hier</a>
+
+
+
+&lt;a class="caret-button">
+  &lt;ion-icon name="caret-forward"></ion-icon>
+</a>
+</code></pre>
+<!--end code samples-->
 
         <br />
         <br />
@@ -92,6 +138,23 @@
           <button type="button" class="btn3 btn-sm btn-default">Button</button>
           <button type="button" class="btn4 btn-xs btn-default">Button</button>
         </ul>
+
+        <pre>
+  <code>
+    <p>Code sample</p>
+    &lt;button type="button" class="btn4 btn-xs btn-default">Button&lt;/button>
+    &lt;button type="button" class="btn4 btn-xs btn-sm">Button&lt;/button>
+    &lt;button type="button" class="btn3 btn-sm btn-default">Button&lt;/button>
+    &lt;button type="button" class="btn1 btn-lg btn-default">Button&lt;/button>
+
+  </code>
+</pre>
+
+        <!--<script type="text/verzinsel" class="code-voorbeeld">
+          <button type="button" class="btn1 btn-lg btn-default">Button</button>
+          <button type="button" class="btn1 btn-lg btn-default">Button</button>
+          <button type="button" class="btn1 btn-lg btn-default">Button</button>
+        </script>-->
 
         <!--<img
           src="screenshot_van_je_header.png"
@@ -127,6 +190,32 @@
         </label>
       </section>
 
+<!--code samples-->
+<pre><code>
+  <p>Code sample</p>
+
+      &lt;label class="dropdown">
+      <br>
+      
+      &lt;div class="dd-button">dropdown</div>
+      <br>
+      
+      &lt;input type="checkbox" class="dd-input" id="test" />
+      <br>
+      &lt;ul class="dd-menu">
+      <br>
+        &lt;li>OBA</li>
+        &lt;li>e-books & luisterboeken</li>
+        &lt;li>Muziekweb</li>
+        &lt;li class="divider"></li>
+        <br>
+      
+        &lt;li>Landelijk</li>
+      &lt;/ul>
+      &lt;/label>
+      <code></pre>
+<!--end code samples-->
+
       <section>
         <h2>Hyperlinks Buttons</h2>
         <p>
@@ -146,7 +235,23 @@
           </ul>
         </nav>
       </section>
+<!--code samples-->
 
+      <pre>
+<code>
+
+  <p>Code sample</p>
+
+  &lt;li>&lt; a href="#">agenda &lt;/a> &lt;/li>
+  &lt;li>&lt;a href="#">collectie &lt;/a> &lt;/li>
+  &lt;li>&lt;a href="#">leren&lt;/a>&lt/li>
+  &lt;li>&lt;a href="#">jeugd&lt;/a>&lt;/li>
+  &lt;li>&lt;a href="#">service&lt;/a>&lt;/li>
+  &lt;li>&lt;a href="#">vestigingen&lt;/a></li>
+
+</code>
+      </pre>
+<!--end code samples-->
       <section>
         <h2>Icon Buttons</h2>
         <p>
@@ -177,8 +282,41 @@
           <ion-icon name="information-circle-outline"></ion-icon>
         </a>
       </section>
+<!--code samples-->
+      <pre>
+<code>
+  <p>Code sample</p>
 
-      <section></section>
+  &lt;a class="wifi-button">
+    &lt;ion-icon name="wifi-outline">&lt;/ion-icon>
+  &lt;/a>
+
+  &lt;a class="print-button">
+    &lt;ion-icon name="print-outline">&lt;/ion-icon>
+  &lt;/a>
+
+  &lt;a class="book-button">
+    &lt;ion-icon name="book-sharp">&lt;/ion-icon>
+  &lt;/a>
+
+  &lt;a class="info-button">
+    &lt;ion-icon name="information-circle-outline">&lt;/ion-icon>
+  &lt;/a> 
+</code>
+      </pre>
+
+
+
+
+
+
+
+
+
+
+
+
     </main>
+
   </body>
 </html>

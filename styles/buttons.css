@@ -17,7 +17,10 @@ h2 {
   margin-top: 3rem;
 }
 
-
+.code-voorbeeld {
+  display: block;
+  white-space: pre;
+}
 
 @font-face {
   font-family: 'avenir_lt_std95_black';
@@ -107,7 +110,10 @@ h2 {
 
 /* end button sizes*/
 
-
+pre {
+  color: red;
+  font-weight: bolder;
+}
 
 /* start dropdown button*/
 .dropdown {
