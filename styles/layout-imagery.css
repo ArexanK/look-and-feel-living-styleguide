@@ -36,5 +36,17 @@ a:hover{
 
 main{
   margin-top: 4em;
+  width: 25em;
+}
+
+fotos{
+  display: flex;
+  flex-direction: row;
+}
+
+img{
+  margin-top: 1em;
+  height: 8em;
+  width: 15em;
 }
 
