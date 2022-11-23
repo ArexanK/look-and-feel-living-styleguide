@@ -38,6 +38,7 @@ body > * {
   padding: 2rem;
   transition: 0.5s;
   transition-delay: 0.5s;
+  background-color: var(--background-color);
 }
 
 iframe {
@@ -45,6 +46,8 @@ iframe {
   width: 100%;
   height: 100%;
   box-shadow: 0 0 0.8rem 0.8rem rgba(0, 0, 0, 0.02);
+  transition: 0.5s;
+  transition-delay: 0.5s;
 }
 
 .logo {
@@ -89,14 +92,55 @@ nav li a:hover {
 }
 
 .open-sidebar {
-  width: 18rem;
+  width: 3rem;
+  height: 3rem;
+  transform: translateX(-3.2rem) translateY(0.5rem);
+  padding: 0;
+  margin: 0;
+  border: none;
+  inset: 0 0 0.8rem 0.8rem;
+  box-shadow: -0.6rem 0rem 0.4rem rgba(0, 0, 0, 0.02) inset;
+  background-color: var(--background-color);
+  cursor: pointer;
+  position: absolute;
+  transition: 0.5s;
+  transition-delay: 0s;
+  border-radius: 0 1rem 1rem 0;
+  z-index: 1;
+}
+
+div.opened-sidebar {
+  transform: translateX(0rem);
+  transition-delay: 0s;
+  box-shadow: -0.3rem 0rem 0.5rem rgba(0, 0, 0, 0.02) inset;
+}
+
+button.close-sidebar {
+  transform: translateX(12.3rem /* 13 - 0.7 */) translateY(0.5rem);;
+  transition-delay: 0s;
+}
+
+button.closing {
+  transition-delay: 0s;
 }
 
 @media screen and (max-width: 1000px) {
   .sidebar-container {
-    transform: translateX(-18rem);
-    padding: 0;
-    width: 0;
+    transform: translateX(-13rem);
+    transition-delay: 0s;
+  }
+
+  .open-sidebar {
+    transition-delay: 0.5s;
+    transform: translateX(-0.7rem) translateY(0.5rem);
+  }
+  
+  /* dit zorgt ervoor dat de ruimte die de sidebar over laat wordt
+  ingenomen door de iframn. */
+
+  iframe {
+    margin-left: -13rem;
+    width: calc(100% + 13rem);
     transition-delay: 0s;
   }
 }

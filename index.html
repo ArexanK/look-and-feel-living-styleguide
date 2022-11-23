@@ -7,13 +7,20 @@
     <title>OBA living styleguide</title>
     <link rel="stylesheet" href="styles/index.css" />
     <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+    <!-- load a javascript file -->
   </head>
   <body>
-    <div class="sidebar-container">
+    <script src="index.js"></script>
+    
+    <button 
+      id="sb-button"
+      class="open-sidebar"
+      onclick="sidebarHandler()"
+    >
+        <img src="./assets/menu.svg" />
+    </button>
 
-      <button class="open-sidebar">
-        <img src="" />
-      </button>
+    <div id="sidebar" class="sidebar-container">
 
       <header>
         <img src="./assets/logo-oba.png" class="logo"> </img> 
