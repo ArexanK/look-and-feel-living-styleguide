@@ -36,6 +36,8 @@ body > * {
   flex-direction: column;
   width: 18rem;
   padding: 2rem;
+  transition: 0.5s;
+  transition-delay: 0.5s;
 }
 
 iframe {
@@ -86,8 +88,15 @@ nav li a:hover {
   color: #f00;
 }
 
+.open-sidebar {
+  width: 18rem;
+}
+
 @media screen and (max-width: 1000px) {
   .sidebar-container {
+    transform: translateX(-18rem);
+    padding: 0;
     width: 0;
+    transition-delay: 0s;
   }
 }
