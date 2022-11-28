@@ -88,12 +88,13 @@ color:red;
 }
 
 /* Accordions */
+.accordion-section{
+  display: grid;
+}
+
 .accordion {
-  background-color: red;
   color: white;
   cursor: pointer;
-  padding: 30px;
-  width: 60%;
   border: none;
   text-align: left;
   outline: none;
@@ -103,7 +104,7 @@ color:red;
 }
 
 .active, .accordion:hover {
-  background-color: darkred; 
+  background-color: red; 
 }
 
 .panel {
@@ -111,7 +112,6 @@ color:red;
   display: none;
   background-color: white;
   overflow: hidden;
-  width: 60%;
   margin-bottom: 0px;
 }
 
@@ -151,8 +151,16 @@ footer{
 
 .Hfooter a{
   display: grid;
-  color: aqua;
+  color: white;
+<<<<<<< Updated upstream
 
+}
+
+.Hfooter a:hover{
+  color: red;
+=======
+  font-size: 16px;
+>>>>>>> Stashed changes
 }
 
 /* tabs */

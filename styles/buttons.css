@@ -3,13 +3,17 @@
   --text-color: #ff0000;
   --content-background: #fff;
   --content-text: #302B27;
+  --button-bg: #302B27;
+  --button-text: #fff;
+
 }
 
 body {
   background-color: var(--content-background);
   color: var(--content-text);
-
   font-family: avenir, Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  ;
   margin: 1rem;
 }
 
@@ -18,48 +22,16 @@ h2 {
 }
 
 
-
-@font-face {
-  font-family: 'avenir_lt_std95_black';
-  src: url('../assets/fonts/avenir/avenirltstd-black-webfont.woff2') format('woff2'),
-    url('../assets/fonts/avenir/avenirltstd-black-webfont.woff') format('woff');
-  font-weight: heavy;
-  font-style: normal;
-}
+/* BUTTONS CSS*/
 
 
 
 
-@font-face {
-  font-family: 'avenir_lt_std45_book';
-  src: url('../assets/fonts/avenir/avenirltstd-book-webfont.woff2') format('woff2'),
-    url('../assets/fonts/avenir/avenirltstd-book-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
 
-
-
-
-@font-face {
-  font-family: 'avenir_lt_std55_roman';
-  src: url('../assets/fonts/avenir/avenirltstd-roman-webfont.woff2') format('woff2'),
-    url('../assets/fonts/avenir/avenirltstd-roman-webfont.woff') format('woff');
-  font-weight: light;
-  font-style: normal;
-}
-
-
-
-
-/* begin Buttons CSS*/
-
-
-/* buttons styles*/
-
+/*button styles*/
 .btn-standaard {
-  background-color: black;
-  color: white;
+  background-color: var(--button-bg);
+  color: var(--button-text);
   font-size: 1rem;
   padding: 1em 1em
 }
@@ -72,42 +44,45 @@ h2 {
 
 /*end button styles*/
 
-/* start button sizes*/
+/* button sizes*/
 
 .btn1 {
   font-size: 12px;
   cursor: pointer;
-  background-color: black;
-  color: white;
+  background-color: var(--button-bg);
+  color: var(--button-text);
 }
 
 .btn2 {
   font-size: 16px;
   cursor: pointer;
-  background-color: black;
-  color: white;
+  background-color: var(--button-bg);
+  color: var(--button-text);
 }
 
 .btn3 {
   font-size: 20px;
   cursor: pointer;
-  background-color: black;
-  color: white;
+  background-color: var(--button-bg);
+  color: var(--button-text);
 }
 
 .btn4 {
   font-size: 24px;
   cursor: pointer;
-  background-color: black;
-  color: white;
+  background-color: var(--button-bg);
+  color: var(--button-text);
 }
 
+/*END Button sizes*/
 
+/*code samples*/
+pre {
+  color: red;
+  font-weight: bolder;
+}
 
-
-/* end button sizes*/
-
-
+/* end code samples*/
 
 /* start dropdown button*/
 .dropdown {
@@ -142,9 +117,6 @@ h2 {
   background-color: white;
 
 }
-
-
-
 
 .dd-input {
   display: none;
@@ -209,10 +181,9 @@ nav>ul {
 
 
 nav>ul>li>a {
-  color: black;
+  color: var(--content-text);
   text-decoration: none;
   font-weight: 900;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 
 }
@@ -221,16 +192,10 @@ nav>ul>li>a:hover {
   color: #F44336;
 }
 
+/*end link buttons*/
 
 
-
-
-
-
-
-
-
-/* icon buttons*/
+/* icon button*/
 ion-icon {
   width: 80px;
   height: 80px;
@@ -238,28 +203,17 @@ ion-icon {
 
 }
 
+/* end BUTTONS CSS*/
 
-/* end buttons css/*
-
-
-
+@media only screen and (min-width:320px) and (max-width:480px) {}
 
 
 
+@media only screen and (min-width:481px) and (max-width:768px) {}
 
 
 
+@media only screen and (min-width:769px) and (max-width:1023px) {}
 
 
-/* begin Icons css/*
-
-
-
-
-
-
-
-
-
-
-/* END Icons CSS /*
+@media only screen and (min-width:1024px) and (max-width:1200px) {}
