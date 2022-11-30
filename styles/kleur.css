@@ -46,12 +46,13 @@ h2 {
   list-style: none;
   padding-inline-start: 0rem;
   display: flex;
+  align-items: flex-end;
   font-size: 1.1rem;
 }
 
 .code {
   color: white;
-  width: 16.666%;
+  width: calc(100% / 6);
   margin-top: 1rem;
   line-height: 2rem;
 }
