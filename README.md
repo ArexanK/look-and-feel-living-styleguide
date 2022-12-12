@@ -3,12 +3,15 @@ Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uit
 De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
 # Living Style Guide OBA
-<img width="1390" alt="Screenshot 2022-11-18 at 09 26 34" src="https://user-images.githubusercontent.com/94745953/202656272-0f510214-4c0b-4ebf-b964-76af0d7425fe.png">
+<img width="1413" alt="Screenshot 2022-11-21 at 09 12 04" src="https://user-images.githubusercontent.com/94745953/202998975-5ab1890f-a518-433f-9b11-b65dfbf7861b.png">
 
-<img width="1431" alt="Screenshot 2022-11-18 at 09 26 56" src="https://user-images.githubusercontent.com/94745953/202656309-7b9e3500-e662-43a2-acc9-852064408eae.png">
-<img width="1438" alt="Screenshot 2022-11-18 at 09 27 23" src="https://user-images.githubusercontent.com/94745953/202656333-64dfdd28-e73c-4cdb-9b6e-fba87524091d.png">
+<img width="1433" alt="Screenshot 2022-11-21 at 09 13 00" src="https://user-images.githubusercontent.com/94745953/202999232-9e759a13-0ea7-42c2-afd7-b66736f8190b.png">
 
-<img width="1440" alt="Screenshot 2022-11-18 at 09 27 47" src="https://user-images.githubusercontent.com/94745953/202656353-141018c0-5d80-4d35-82fc-a1d3c900f411.png">
+
+
+<img width="1411" alt="Screenshot 2022-11-21 at 09 12 21" src="https://user-images.githubusercontent.com/94745953/202998951-9cfb85e6-29dd-426c-acf6-af6ee42eebcc.png">
+<img width="1415" alt="Screenshot 2022-11-21 at 09 13 42" src="https://user-images.githubusercontent.com/94745953/202999091-88f21f79-4b98-4aef-afd3-b19c8726a93f.png">
+<img width="1427" alt="Screenshot 2022-11-21 at 09 13 18" src="https://user-images.githubusercontent.com/94745953/202999509-78070a2d-7653-4de6-8cce-2132fdb520c6.png">
 
 
 http://oba-styleguide.student.fdnd.nl/

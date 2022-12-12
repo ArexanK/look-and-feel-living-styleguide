@@ -5,22 +5,36 @@
   --darkgrey: #333;
   --lightgray: #6f6f6f;
   --white: rgb(255, 255, 255);
+}
 
-  --background-color: #fff;
-  --text-color: #ff0000;
-  --content-background: #fff;
-  --content-text: #302B27;
+@font-face {
+  font-family: AvenirRoman;
+  src: url(../font/Avenir-roman.ttf);
+}
+
+@font-face {
+  font-family: AvenirMedium;
+  src: url(../font/Avenir-medium.ttf);
+}
+
+@font-face {
+  font-family: AvenirBlack;
+  src: url(../font/Avenir\ -black.ttf);
 }
 
 body {
-  font-family: avenir, Arial, Helvetica, sans-serif;
-  margin: 1rem;
-  background-color: var(--content-background);
-  color: var(--content-text);
+  font-family: avenirmedium, Arial, Helvetica, sans-serif;
+  margin: 4rem 4rem 4rem 6rem;
+  margin: 2rem;
+}
+
+h1
+{
+  font-size: 2rem;
 }
 
 h2 {
-  margin-top: 3rem;
+  font-size: 1.625rem;
 }
 
 .colors {
@@ -32,12 +46,13 @@ h2 {
   list-style: none;
   padding-inline-start: 0rem;
   display: flex;
+  align-items: flex-end;
   font-size: 1.1rem;
 }
 
 .code {
   color: white;
-  width: 16.666%;
+  width: calc(100% / 6);
   margin-top: 1rem;
   line-height: 2rem;
 }
@@ -57,15 +72,14 @@ h2 {
   line-height: 2rem;
 }
 
-.spanColor,
-.spanColorFirst {
+.spanColor {
   font-weight: bold;
   font-size: 1.3rem;
-  padding: 0rem 0.2rem 0rem 0.2rem;
+  padding: 0.2rem 0.3rem 0.2rem 0.3rem;
 }
 
-.spanColorFirst {
-  padding-left: 0rem;
+.spanColor2{
+  font-weight: bold;
 }
 
 hr {
@@ -231,8 +245,7 @@ svg {
   }
 }
 
-
-@media (max-width:1150px) {
+@media (max-width: 1450px) {
   .listColors {
     list-style: none;
     padding-inline-start: 0rem;
@@ -251,7 +264,7 @@ svg {
   }
 }
 
-@media (max-width:780px) {
+@media (max-width: 900px) {
   .listColors {
     flex-direction: column;
     align-items: center;
@@ -262,7 +275,7 @@ svg {
   }
 }
 
-@media (max-width:1030px) {
+@media (max-width: 1100px) {
   .colors {
     display: none;
   }
@@ -332,6 +345,7 @@ svg {
     display: block;
     position: absolute;
     left: 0;
+    right: -2rem;
     right: 0;
     margin: auto;
     margin-top: -19.2rem;
@@ -341,14 +355,6 @@ svg {
 
   #textPath1 {
     fill: white;
-  }
-
-  #textPath1::after {
-    content: "(255,255,255)";
-    fill: rgb(55, 0, 255);
-    color: rgb(106, 50, 50);
-    /* transform: translateX(-100%);
-    position: absolute; */
   }
 }
 

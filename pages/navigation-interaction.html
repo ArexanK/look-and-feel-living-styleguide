@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="scripts/script.js"></script>
+  
   <!-- CSS -->
   <link rel="stylesheet" href="../styles/navigation-interaction.css" />
 
@@ -32,31 +32,38 @@
 
 <body>
   <!-- Acoortdions -->
-  <h1>Accordion voorbeeld 1</h1>
-  <p class="uitleg">In webdesign is een accordeon een type menu dat een lijst met op elkaar gestapelde koppen weergeeft.
-    Wanneer erop wordt geklikt (of geactiveerd door een toetsenbordinteractie of schermlezer), zullen deze koppen de
-    bijbehorende inhoud onthullen of verbergen.</p>
+  <section>
+    <h1>Accordion voorbeeld 1</h1>
+    <p class="uitleg">In webdesign is een accordeon een type menu dat een lijst met op elkaar gestapelde koppen
+      weergeeft.
+      Wanneer erop wordt geklikt (of geactiveerd door een toetsenbordinteractie of schermlezer), zullen deze koppen de
+      bijbehorende inhoud onthullen of verbergen.</p>
+    <div class="accordion-section">
+      <button class="accordion">Section 1</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+      </div>
 
-  <button class="accordion">Section 1</button>
-  <div class="panel">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat.</p>
-  </div>
+      <button class="accordion">Section 2</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+      </div>
 
-  <button class="accordion">Section 2</button>
-  <div class="panel">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat.</p>
-  </div>
-
-  <button class="accordion">Section 3</button>
-  <div class="panel">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat.</p>
-  </div>
+      <button class="accordion">Section 3</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+      </div>
+    </div>
+  </section>
 
   <script>
     var acc = document.getElementsByClassName("accordion");
@@ -78,38 +85,102 @@
 
   <!-- tabs -->
   <h1>Tabs</h1>
-    <div class="wat">
-        <button class="button1" onclick="openCity('London')">London</button>
-        <button class="button2" onclick="openCity('Paris')">Paris</button>
-        <button class="button3" onclick="openCity('Tokyo')">Tokyo</button>
-      </div>
-      
-      <div id="London" class="w3-container city">
-        <h2>London</h2>
-        <p>London is the capital city of England.</p>
-      </div>
-      
-      <div id="Paris" class="w3-container city" style="display:none">
-        <h2>Paris</h2>
-        <p>Paris is the capital of France.</p> 
-      </div>
-      
-      <div id="Tokyo" class="w3-container city" style="display:none">
-        <h2>Tokyo</h2>
-        <p>Tokyo is the capital of Japan.</p>
-      </div>
-<script>
-function openCity(cityName) {
-    var i;
-    var x = document.getElementsByClassName("city");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";  
+  <div class="wat">
+    <button class="button1" onclick="openCity('London')">London</button>
+    <button class="button2" onclick="openCity('Paris')">Paris</button>
+    <button class="button3" onclick="openCity('Tokyo')">Tokyo</button>
+  </div>
+
+  <div id="London" class="w3-container city">
+    <h2>London</h2>
+    <p>London is the capital city of England.</p>
+  </div>
+
+  <div id="Paris" class="w3-container city" style="display:none">
+    <h2>Paris</h2>
+    <p>Paris is the capital of France.</p>
+  </div>
+
+  <div id="Tokyo" class="w3-container city" style="display:none">
+    <h2>Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+  <script>
+    function openCity(cityName) {
+      var i;
+      var x = document.getElementsByClassName("city");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      document.getElementById(cityName).style.display = "block";
     }
-    document.getElementById(cityName).style.display = "block";  
-  }
   </script>
 
   <!-- tabs end -->
+
+<!-- Slider -->
+
+<h1>Slider</h1>
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="../images/thumbnail.jpeg">
+    <div class="text">Niek de groot gaat voor goud</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="../images/juf.jpeg">
+    <div class="text">Juf Braaksel en de woeste</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="../images/Neehoorn.jpeg">
+    <div class="text">De neehoorn</div>
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+  
+  <script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+
+  <!-- slider end -->
+
 </body>
 
 <h1>Footer</h1>

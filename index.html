@@ -6,22 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OBA living styleguide</title>
     <link rel="stylesheet" href="styles/index.css" />
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+    <!-- load a javascript file -->
   </head>
   <body>
-    <div class="sidebar-container">
-    <header>
-      <img src="./assets/logo-oba.png" class="logo" />
-    </header>
+    <script src="index.js"></script>
+    
+    <button 
+      id="sb-button"
+      class="open-sidebar"
+      onclick="sidebarHandler()"
+    >
+        <img src="./assets/menu.svg" />
+    </button>
 
-    <nav>
-      <ul>
-        <li><a href="/pages/typografie.html" target="displayed-page">Typografie</a></li>
-        <li><a href="/pages/kleur.html" target="displayed-page">Kleur</a></li>
-        <li><a href="/pages/icons-buttons.html" target="displayed-page">Icons & Buttons</a></li>
-        <li><a href="/pages/layout-imagery.html" target="displayed-page">Layout & Imagery</a></li>
-        <li><a href="/pages/navigation-interaction.html" target="displayed-page">Navigation & Interaction</a></li>
-      </ul>
-    </nav>
+    <div id="sidebar" class="sidebar-container">
+
+      <header>
+        <img src="./assets/logo-oba.png" class="logo"> </img> 
+        <h1>Living Styleguide</h1>
+      </header>
+
+      <nav>
+        <ul>
+          <li><a href="/pages/typografie.html" target="displayed-page">Typografie</a></li>
+          <li><a href="/pages/kleur.html" target="displayed-page">Kleur</a></li>
+          <li><a href="/pages/buttons.html" target="displayed-page">Icons & Buttons</a></li>
+          <li><a href="/pages/layout-imagery.html" target="displayed-page">Layout & Imagery</a></li>
+          <li><a href="/pages/navigation-interaction.html" target="displayed-page">Navigation & Interaction</a></li>
+        </ul>
+      </nav>
+
     </div>
 
     <main>

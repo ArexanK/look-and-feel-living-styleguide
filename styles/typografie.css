@@ -23,16 +23,38 @@ p{
   font-size: 1,0769rem;
 }
 
-.heading2{
+h1{
+  font-family: AvenirBlack;
+  font-size: 2.5rem;
+}
+
+h2{
+  font-family: AvenirBlack;
   font-size: 2rem;
 }
 
+.heading2{
+  font-family: AvenirBlack;
+  font-size: 2rem;
+  line-height: 0.6;
+  min-width: 250px;
+  margin-left: 100px;
+  margin-top: 12px;
+}
+
 .heading3{
- font-size: 26px; 
+font-family: 'Avenir', Arial, Helvetica, sans-serif;
+ font-size: 1.625rem; 
+ line-height: 0.6;
+ min-width: 250px;
+ margin-left: 100px;
 }
 
 .heading4{
-  font-size: 17,5px; 
+  font-size: 1.09375rem; 
+  line-height: 1;
+  min-width: 250px;
+  margin-left: 100px;
  }
 
  /* Typografie tekst */
@@ -69,10 +91,11 @@ p{
 
 .container div{
   font-family: AvenirMedium;
-  font-size: 13px;
+  font-size: 0.9rem;
   align-items: center;
   width: 10%;
-  line-height: 0.8;
+  line-height: 0.9;
+  padding: 10px;
 }
 
 .sub-title {
@@ -141,6 +164,6 @@ hr {
   height: 0;
   margin: 20px;
   margin-inline-end: 20px;
-  background-color: white;
+  background-color: rgb(136, 136, 136);
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }

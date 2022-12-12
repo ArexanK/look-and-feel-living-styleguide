@@ -1,48 +1,67 @@
+/* Boilerplate */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+body > * {
+  width: 100%;
+}
+
+/* Variables */
 :root {
+  /* Colours */
   --background-color: #fff;
   --text-color: #000000;
-  --content-background: #fff;
-  --content-text: #302B27;
 
+  /* How fast the sidebar transition animation will play when transitioning to a smaller screen */
+  --sidebar-animation-speed: 0.5s;
 }
 
 body {
-  min-height: 100vh;
-
-  font-family: sans-serif;
+  /* Font styles */
+  font-family: 'Avenir', sans-serif;
   text-rendering: optimizeLegibility;
   font-feature-settings: 'kern' 1, 'liga' on, 'dlig' on;
   line-height: 1.5;
 
-  background-color: var(--background-color);
+  /* Correcting the height of the body (necessary to achieve our layout) */
+  min-height: 100vh;
 
+  /* Background colour and layout styling */
+  background-color: var(--background-color);
   display: flex;
   flex-direction: row;
+  overflow-x: hidden;
 }
 
-body > * {
-  padding: 0;
+
+iframe {
+  border: none;
+
+  /* Making sure the iframe takes up the rest of the page after the sidebar takes its place */
   width: 100%;
+  height: 100%;
+
+  /* Subtle shadow to show where sidebar begins */
+  box-shadow: 0 0 0.8rem 0.8rem rgba(0, 0, 0, 0.02);
+
+  /* Styling necessary for transition when the viewport becomes smaller */
+  transition: var(--sidebar-animation-speed);
+  transition-delay: var(--sidebar-animation-speed);
 }
 
 .sidebar-container {
   display: flex;
   flex-direction: column;
-  width: 17rem
+  width: 18rem;
+  padding: 2rem;
+  transition: var(--sidebar-animation-speed);
+  transition-delay: var(--sidebar-animation-speed);
+  background-color: var(--background-color);
 }
 
-iframe {
-  border: none;
-  width: 100%;
-  height: 100%;
-  box-shadow: 0 0 0.8rem 0.8rem rgba(0, 0, 0, 0.02);
-}
 
 .logo {
   height: 3rem;
@@ -61,10 +80,18 @@ header {
 
 header > h1 {
   font-size: 1rem;
+  color: #f00;
+}
+
+nav li:nth-of-type(1) {
+  list-style-type: none;
+  padding-top: 2rem;
 }
 
 nav li {
   list-style-type: none;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 nav li a {
@@ -73,6 +100,57 @@ nav li a {
   color: var(--text-color);
 }
 
-nav a.active {
-  font-weight: bold;
+nav li a:hover {
+  color: #f00;
+}
+
+.open-sidebar {
+  width: 3rem;
+  height: 3rem;
+  transform: translateX(-3.2rem) translateY(0.5rem);
+  padding: 0;
+  margin: 0;
+  border: none;
+  inset: 0 0 0.8rem 0.8rem;
+  box-shadow: -0.6rem 0rem 0.4rem rgba(0, 0, 0, 0.02) inset;
+  background-color: var(--background-color);
+  cursor: pointer;
+  position: absolute;
+  transition: var(--sidebar-animation-speed);
+  transition-delay: 0s;
+  border-radius: 0 1rem 1rem 0;
+  z-index: 1;
+}
+
+div.opened-sidebar {
+  transform: translateX(0rem);
+  transition-delay: 0s;
+  box-shadow: -0.3rem 0rem 0.5rem rgba(0, 0, 0, 0.02) inset;
+}
+
+button.close-sidebar {
+  transform: translateX(12.3rem /* 13 - 0.7 */) translateY(0.5rem);;
+  transition-delay: 0s;
+}
+
+button.closing {
+  transition-delay: 0s;
+}
+
+@media screen and (max-width: 1000px) {
+  .sidebar-container {
+    transform: translateX(-13rem);
+    transition-delay: 0s;
+  }
+
+  .open-sidebar {
+    transition-delay: var(--sidebar-animation-speed);
+    transform: translateX(-0.7rem) translateY(0.5rem);
+  }
+
+  iframe {
+    margin-left: -13rem;
+    width: calc(100% + 13rem);
+    transition-delay: 0s;
+  }
 }
