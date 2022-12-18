@@ -1,9 +1,10 @@
 :root {
-  --background-color: rgb(255, 255, 255);
   --title-color: #8b8b8b;
   --content-background: rgb(255, 255, 255);
   --content-text: #302B27;
-  --fs-body: 1.1rem;
+  --fs-content: 1.1rem;
+  --main-heading: 2.5rem;
+  --mid-heading: 2rem;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
   font-family: 'Avenir', Arial, Helvetica, sans-serif;
   margin: 5em;
   max-width: 60em;
-  font-size: var(--fs-body);
+  font-size: var(--fs-content);
   line-height: 2rem;
 }
 
@@ -26,12 +27,12 @@ p{
 
 h1{
   font-family: AvenirBlack;
-  font-size: 2.5rem;
+  font-size: var(--main-heading);
 }
 
 h2{
   font-family: AvenirBlack;
-  font-size: 2rem;
+  font-size: var(--mid-heading);
 }
 
 .heading2{
@@ -168,3 +169,20 @@ hr {
   background-color: rgb(136, 136, 136);
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+
+@media only screen and (max-width: 767px){
+
+  body{
+    --fs-content: 0.9rem;
+  }
+
+  h1{
+   --main-heading: 2rem;
+ }
+ 
+ h2{
+   --mid-heading: 1.5rem;
+ }
+}
+
