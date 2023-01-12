@@ -170,19 +170,28 @@ hr {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-
-@media only screen and (max-width: 767px){
-
-  body{
+/* Media queries*/
+@media only screen and (max-width: 1024px) {
+  :root {
     --fs-content: 0.9rem;
+    --main-heading: 2rem;
+    --mid-heading: 1.5rem;
   }
+}
 
-  h1{
-   --main-heading: 2rem;
- }
- 
- h2{
-   --mid-heading: 1.5rem;
- }
+@media only screen and (max-width:320px) {
+  :root {
+    --fs-content: 0.9rem;
+    --main-heading: 2rem;
+    --mid-heading: 1.5rem;
+  }
+}
+
+  @media only screen and (max-width: 767px) {
+    :root {
+      --fs-content: 0.9rem;
+      --main-heading: 2rem;
+      --mid-heading: 1.5rem;
+    }
 }
 
