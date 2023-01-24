@@ -3,6 +3,7 @@
   --text-color: #55505C;
   --content-background: #fff;
   --content-text: #302B27;
+  --text-color-red: red;
 }
 
 body {
@@ -16,8 +17,7 @@ body {
   border: 1px solid #808080;
 }
 
-/* navigatie */
-
+/* Navigatie */
 nav ul{
   list-style-type: none;
   display: block;
@@ -33,8 +33,6 @@ nav ul{
 li{
   display: inline;
   padding: 30px;
-  
-
 }
 
 #dev a{
@@ -44,7 +42,7 @@ li{
   
 }
 #dev a:hover{
-color:red;
+color:  var(--text-color-red);
 }
 
 @media (max-width: 1100px){
@@ -52,6 +50,7 @@ color:red;
       padding: 10px;
   }
 }
+
 @media (max-width: 1100px){
   #dev ul{
       display: grid;
@@ -65,8 +64,6 @@ color:red;
       gap: 5px;
   }
 }
-
-
 
 .nav1{
   grid-area: nav1;
@@ -104,7 +101,7 @@ color:red;
 }
 
 .active, .accordion:hover {
-  background-color: red; 
+  background-color:   var(--text-color-red); 
 }
 
 .panel {
@@ -129,20 +126,19 @@ footer{
   color: white;
   font-size: large;
   padding-top: 10px;
-
-
- 
 }
 
 .Hfooter p{
  padding-left: 10%;
  font-size: 30px;
 }
+
 @media (min-width: 570px){
   .Hfooter{
       display: flex;
   }
 }
+
 @media (max-width: 570px){
   footer{
       height: 1400px;
@@ -152,33 +148,29 @@ footer{
 .Hfooter a{
   display: grid;
   color: white;
-<<<<<<< Updated upstream
-
 }
 
 .Hfooter a:hover{
-  color: red;
-=======
+  color:   var(--text-color-red);
   font-size: 16px;
->>>>>>> Stashed changes
 }
 
 /* tabs */
 
 .button1{
   color: white;
-  background-color: red;
-  border-color: red;
+  background-color:   var(--text-color-red);
+  border-color:   var(--text-color-red);
 }
 
 .button2{
   color: white;
-  background-color: red;
-  border-color: red;
+  background-color:   var(--text-color-red);
+  border-color:   var(--text-color-red);
 }
 
 .button3{
   color: white;
-  background-color: red;
-  border-color: red;
+  background-color:   var(--text-color-red);
+  border-color:   var(--text-color-red);
 }
