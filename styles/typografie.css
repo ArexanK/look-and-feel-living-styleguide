@@ -1,8 +1,10 @@
 :root {
-  --background-color: #fff;
-  --text-color: #55505C;
-  --content-background: #fff;
+  --title-color: #8b8b8b;
+  --content-background: rgb(255, 255, 255);
   --content-text: #302B27;
+  --fs-content: 1.1rem;
+  --main-heading: 2.5rem;
+  --mid-heading: 2rem;
 }
 
 body {
@@ -11,12 +13,12 @@ body {
   font-family: 'Avenir', Arial, Helvetica, sans-serif;
   margin: 5em;
   max-width: 60em;
-  font-size: 1.1rem;
+  font-size: var(--fs-content);
   line-height: 2rem;
 }
 
 p{
-  font-size: 1 rem;
+  font-size: 1rem;
 }
 
 .basislettertype{
@@ -25,12 +27,12 @@ p{
 
 h1{
   font-family: AvenirBlack;
-  font-size: 2.5rem;
+  font-size: var(--main-heading);
 }
 
 h2{
   font-family: AvenirBlack;
-  font-size: 2rem;
+  font-size: var(--mid-heading);
 }
 
 .heading2{
@@ -100,7 +102,7 @@ font-family: 'Avenir', Arial, Helvetica, sans-serif;
 
 .sub-title {
   font-family: AvenirMedium;
-  color: rgb(144, 144, 144);
+  color: var(--title-color);
 }
 
 .medium-example-1 {
@@ -167,3 +169,29 @@ hr {
   background-color: rgb(136, 136, 136);
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+/* Media queries*/
+@media only screen and (max-width: 1024px) {
+  :root {
+    --fs-content: 0.9rem;
+    --main-heading: 2rem;
+    --mid-heading: 1.5rem;
+  }
+}
+
+@media only screen and (max-width:320px) {
+  :root {
+    --fs-content: 0.9rem;
+    --main-heading: 2rem;
+    --mid-heading: 1.5rem;
+  }
+}
+
+  @media only screen and (max-width: 767px) {
+    :root {
+      --fs-content: 0.9rem;
+      --main-heading: 2rem;
+      --mid-heading: 1.5rem;
+    }
+}
+
